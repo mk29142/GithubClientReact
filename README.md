@@ -13,5 +13,7 @@ To run this you must:
     $ npm start
  
 npm install inside the directory will install all the dependancies
+
 npm run build will create the bundle.js file
+
 npm start will run the server on localhost:8080
