@@ -6,16 +6,15 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        text: '',
         visible: false,
-        acc: ''
+        account: ''
     };
     this.updateState = this.updateState.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
   updateState(e) {
-      this.setState({acc: e.target.value, visible: false});
+      this.setState({account: e.target.value, visible: false});
   }
 
   onSubmit (e) {
@@ -23,10 +22,10 @@ class Input extends React.Component {
   }
 
   render() {
-    const popup = (this.state.visible ? <Client value={this.state.acc} /> : null);
+    const popup = (this.state.visible ? <Client value={this.state.account} /> : null);
     return (
       <div>
-        <input type = "text" value = {this.state.acc} 
+        <input type = "text" value = {this.state.account}
             onChange = {this.updateState} />
         <div><button onClick={this.onSubmit}>Submit</button></div>
         {popup}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {loadJson, getRepos} from './helpers.js';
+import {getRepos} from './helpers.js';
 import axios from 'axios';
 
 class Client extends React.Component {
