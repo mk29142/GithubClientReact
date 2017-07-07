@@ -4,13 +4,14 @@ React practice
 
 Enter github username and it will return their most used language.
 
-To run first intall npm.
+To run this you must:
 
-Then run npm install to get all the dependencies. 
-
+    $ sudo apt-get install npm
+    $ cd GithubClientReact
+    $ npm install
     $ npm run build
     $ npm start
-
-npm run build : builds everything into a bundle.js
-
-npm start : will run the local server. so you can go on localhost:8080 to run the app.
+ 
+npm install inside the directory will install all the dependancies
+npm run build will create the bundle.js file
+npm start will run the server on localhost:8080
